@@ -6,6 +6,29 @@ build-backend = "hatchling.build"
 name = "xfep-sign"
 version = "0.1.0"
 description = "Firma digital XMLDSig para Facturación Electrónica Perú"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Jhonatan Mosquera Tabra", email = "jhonatanmt83@gmail.com"},
+]
+maintainers = [
+    {name = "Jhonatan Mosquera Tabra", email = "jhonatanmt83@gmail.com"},
+]
+keywords = ["sunat", "facturacion-electronica", "peru", "xmldsig", "xml-signature", "firma-digital", "cryptography", "cpe"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Natural Language :: Spanish",
+    "Operating System :: OS Independent",
+]
 requires-python = ">=3.13"
 dependencies = [
     "cryptography>=43.0",
@@ -16,6 +39,12 @@ dependencies = [
 dev = [
     "pytest>=8.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Xpertik/xfep-sign"
+Repository = "https://github.com/Xpertik/xfep-sign"
+Issues = "https://github.com/Xpertik/xfep-sign/issues"
+Documentation = "https://github.com/Xpertik/xfep-sign#readme"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/xfep"]

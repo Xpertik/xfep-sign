@@ -139,4 +139,4 @@ Los tests generan certificados auto-firmados — no se necesitan archivos extern
 
 ## Licencia
 
-MIT
+Apache License 2.0 — ver [LICENSE](LICENSE).
